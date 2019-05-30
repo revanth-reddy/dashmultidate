@@ -71,9 +71,9 @@ layout = html.Div([
     dcc.DatePickerRange(
         id='date-picker-range',
         display_format='MMM Do, YY ',
-        min_date_allowed=dtmin,
-        max_date_allowed=dt.now().date(),
-        initial_visible_month=dt.now().date(),
+        min_date_allowed=dtmin.date(),
+        max_date_allowed=dtmax.date(),
+        initial_visible_month=dtmin.date(),
         start_date = dtmin.date(),
         end_date = dtmax.date(),
     ),className='d-flex justify-content-center'),
