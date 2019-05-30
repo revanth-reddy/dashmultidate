@@ -9,6 +9,11 @@ import dash_bootstrap_components as dbc
 
 from app import app
 
+app.css.append_css({
+    "external_url": "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css",
+    "external_url": "https://codepen.io/revanth-reddy/pen/bymxpZ.css"
+})
+
 conn = psycopg2.connect(host="john.db.elephantsql.com",database="hibzxjxl", user="hibzxjxl", password="BbJmB-QJQegz1z8f4jmsfsUY0GsNXehi")
 
 cur = conn.cursor()
